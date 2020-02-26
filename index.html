@@ -17,7 +17,6 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            /* position: absolute; */
             width: 100%;
             height: 100vh;
         }
@@ -25,9 +24,7 @@
         .cabe1{
             /* position: relative; */
             width: 50%;
-            /* height: 25vh; */
             background: #ffffff;
-            /* clip-path: polygon(0 0, 100% 0%, 63% 100%, 0% 100%); */
             background-image: url("pictures/header_pic22.jpg");
             background-position: center;
             background-repeat: no-repeat;
@@ -35,10 +32,8 @@
         }
 
         .cabe2{
-            /* font-family: 'Roboto Condensed', ; */
             position: relative;
             width: 50%;
-            /* height: 25vh; */
             background: #ffffff;
         }
 
@@ -49,7 +44,6 @@
             position: absolute;
             top: 50%;
             right: 10%;
-            /* left: 10%; */
             text-align: right;
         }
         .contenido{
@@ -61,31 +55,60 @@
             max-width: 100%;
             margin: auto;
             border-radius: 10px;
-            background: #f0e3ff;
-            margin-top: 10%;
-            
+            background: #ffffff7e;
+            margin-top: 1%;
 
         }
         .grados{
             width: 40%;
             height: 20vw;
             border-radius: 10px;
-            margin-top: 10%;
-
-
-            background: #4cd30e;
-        }
-
-        /* .grados:hover{
-            background-color: red;
-
-        } */
-
-        .grados a{
+            margin-top: 5%;
+            /* background: #b8e7a3; */
             background: url("pictures/pic_1.jpg");
+            /* opacity: 0.5; */
             background-size: contain;
+            /* background: linear-gradient(70deg, black, white); */
+        }
+        .grados a{
+
 
         }
+
+        .enlaces{
+            list-style-type: none;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            font-size: 2em;
+            margin-top: 2em;
+        }
+
+        .enlaces li{
+            display: inline;
+            text-align: center;
+            margin: 0 50px 0 0;
+        }
+
+        .enlaces li a{
+            color: #550a46;
+            /* background-color: cornflowerblue; */
+            text-decoration: none;
+
+        }
+        .enlaces a:hover {
+            background-color: #9aceff;
+            color: #000;
+            
+            }
+
+        .grados p{
+            font-size: 4em;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin-top: 20px;
+        }
+
     </style>
 
 </head>
@@ -100,41 +123,43 @@
         </div>
     </div>
 
+    <div class="enlaces">
+        <ul>
+            <li><a href="lectura.html">INICIO</a></li>
+            <li><a href="https://exceltotal.com/">NOSOTROS</a></li>
+            <li><a href="https://exceltotal.com/">SEDES</a></li>
+            <li><a href="https://exceltotal.com/">ACADEMIA</a></li>
+            <li><a href="https://exceltotal.com/">CONTACTO</a></li>
+        </ul>
+    </div>
+
 
 
 
     <div class="contenido">
 
     
-        <!-- <a href="www.facebook.com"> -->
-            <div class="grados"> 
-                <!-- <p>GRADO SEXTO</p> -->
-            </div>
-        <!-- </a> -->
+        <div class="grados">
+            <p>GRADO SEXTO</p>
+        </div>
 
         <div class="grados">
             <p>GRADO SEPTIMO</p>
             <h4>TALLERES</h4>
             <a href="docs/doc_guia_pp.docx">Taller 2</a>
-            <a href="docs/WORD_PARTE1.pdf">TALLER 3</a>
-            <a href="docs/WORD_PARTE2.pdf">TALLER 4</a>
+
         </div>
 
         <div class="grados">
             <p>GRADO OCTAVO</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, soluta.</p>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
         </div>
 
         <div class="grados">
             <p>GRADO NOVENO</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur.</p>
         </div>
 
         <div class="grados">
             <p>GRADO DECIMO</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, eaque!</p>
         </div>
 
         <div class="grados">

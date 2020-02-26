@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html{
+    font-size: 16px;
+}
+
 .cabecera{
     position: relative;
     width: auto;
@@ -12,7 +16,7 @@
 
 .titulo{
     position: absolute;
-    font-size: 5em;
+    font-size: 5rem;
     top: 60%;
     right: 5%;
     text-align: right;
@@ -26,7 +30,7 @@
 }
 
 .contenido > p{
-    font-size: 20px;
+    font-size: 1.5rem;
     font-family: 'Playfair Display';
 }
 

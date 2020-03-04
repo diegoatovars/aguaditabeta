@@ -3,77 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <title>IE Aguadita</title>
 
     <style>
         *{
             padding: 0;
             margin: 0;
-            box-sizing: border-box;
         }
 
-        html{
-            font-size: 16px;
-        }
-
-        .header{
+       .header{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            justify-content: space-evenly;
             width: 100%;
             height: 100vh;
         }
 
-        .cabe1{
-            /* position: relative; */
+        .cabe1, .cabe2{
             width: 50%;
-            background: #ffffff;
-            background-image: url("pictures/header_pic22.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            height: 100vh;
         }
 
-        .cabe2{
-            position: relative;
-            width: 50%;
-            background: #ffffff;
+        .cabe1 img{
+            width: 100%;
+            max-height: 100%;
         }
-
 
         .cabe2 p{
-            font-family: 'Roboto Condensed';
-            font-size: 4rem;
+            font-family: 'Playfair Display', serif;
             position: absolute;
-            top: 50%;
-            right: 10%;
+            font-size: 4rem;
+            top: 40%;
+            right: 0%;
             text-align: right;
-        }
-        .contenido{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            width: 90%;
-            max-width: 100%;
-            margin: 50px auto 150px auto;
-            /* margin: auto; */
-            border-radius: 10px;
-            background: #ffffff7e;
-            margin-top: 1%;
-
-        }
-        .grados{
-            width: 40%;
-            height: 20vw;
-            border-radius: 10px;
-            margin-top: 5%;
-            /* background: #b8e7a3; */
-            background: url("pictures/pic_1.jpg") no-repeat;
-            opacity: 0.8;
-            background-size: cover;
-            /* background: linear-gradient(70deg, black, white); */
+            background: #ffffff;
         }
 
         .enlaces{
@@ -81,8 +47,9 @@
             width: 80%;
             margin: auto;
             text-align: center;
-            font-size: 3em;
-            margin-top: 2em;
+            font-size: 3rem;
+            margin: 3rem auto 3rem;
+            /* background: rgb(243, 235, 231); */
         }
 
         .enlaces li{
@@ -93,44 +60,64 @@
 
         .enlaces li a{
             color: #550a46;
-            /* background-color: cornflowerblue; */
             text-decoration: none;
 
         }
         .enlaces a:hover {
             background-color: #9aceff;
-            color: #000;            
-            }
+            color: #000;
+        }
+
+        .contenido{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 90%;
+            height: auto;
+            margin: 0 auto 5rem auto;
+        }
+
+        .grados{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 40%;
+            height: 20vw;
+            border-radius: 10px;
+            margin-top: 2%;
+            background: url("pictures/pic_1.jpg") no-repeat;
+            opacity: 0.7;
+            background-size: cover;
+        }
+
+        .gradosp{
+            position: absolute;
+            top: 75%;
+            width: 100%;
+            height: 5.0rem;
+            background-color: rgb(255, 255, 255);
+        }
 
         .gradosp p{
-            position: absolute;
+            text-align: center;
             font-size: 3.0rem;
-            color: rgb(0, 0, 0);
-            top:20%;
-            left:25vh;
-            align-items: center;
+            margin-top: 1rem;
            }
 
         .gradosp a{
             text-decoration: none;
         }
 
-        .gradosp{
-            position: relative;
-            width: 100%;
-            height: 5.0rem; 
-            top: 75%;           
-            background-color: rgb(231, 231, 231);
-        }
-
         .footer{
             display: flex;
-            margin:auto;
+            flex-direction: row;
+            justify-content: space-around;
             width: 100%;
             height: 25vh;
-            background-color:rgb(235, 214, 214);
-                    flex-direction: row;
-            justify-content: space-around;
+            background-color:rgb(241, 233, 233);
+
             align-items: center;
     }
 
@@ -140,68 +127,63 @@
     }
 
 
-     
+
     </style>
 
 </head>
 <body>
+<div class="header">
+    <div class="cabe1">
+        <img src="pictures/header_index.jpg" alt="">
 
-    <div class="header">
-        <div class="cabe1">
+    </div>
+    <div class="cabe2">
+        <p>INSTITUCIÓN EDUCATIVA <br> LA AGUADITA <br>AÑO 2020</p>
+    </div>
+</div>
 
-        </div>
-        <div class="cabe2">
-            <p>INSTITUCIÓN EDUCATIVA <br> LA AGUADITA <br>AÑO 2020</p>
+<div class="enlaces">
+    <ul>
+        <li><a href="https://exceltotal.com/">INICIO</a></li>
+        <li><a href="nosotros.html">NOSOTROS</a></li>
+        <li><a href="https://exceltotal.com/">SEDES</a></li>
+        <li><a href="lectura.html">ACADEMIA</a></li>
+        <li><a href="https://exceltotal.com/">CONTACTO</a></li>
+    </ul>
+</div>
+
+<div class="contenido">
+    <div class="grados">
+        <div class="gradosp">
+            <a href="sexto.html"><p>GRADO SEXTO</p></a>
         </div>
     </div>
 
-    <div class="enlaces">
-        <ul>
-            <li><a href="https://exceltotal.com/">INICIO</a></li>
-            <li><a href="nosotros.html">NOSOTROS</a></li>
-            <li><a href="https://exceltotal.com/">SEDES</a></li>
-            <li><a href="lectura.html">ACADEMIA</a></li>
-            <li><a href="https://exceltotal.com/">CONTACTO</a></li>
-        </ul>
+    <div class="grados">
+        <div class="gradosp">
+            <a href="septimo.html"><p>GRADO SEPTIMO</p></a>
+        </div>
     </div>
-
-
-
-
-    <div class="contenido">
-
-    
-        <div class="grados">
-            <div class="gradosp">
-                <a href="sexto.html"><p>GRADO SEXTO</p></a>
-            </div>
+    <div class="grados">
+        <div class="gradosp">
+            <a href="octavo.html"><p>GRADO OCTAVO</p></a>
         </div>
-
-        <div class="grados">
-            <div class="gradosp">
-                <a href="septimo.html"><p>GRADO SEPTIMO</p></a>
-            </div>
+    </div>
+    <div class="grados">
+        <div class="gradosp">
+            <a href="noveno.html"><p>GRADO NOVENO</p></a>
         </div>
-        <div class="grados">
-            <div class="gradosp">
-                <a href="octavo.html"><p>GRADO OCTAVO</p></a>
-            </div>
+    </div>
+    <div class="grados">
+        <div class="gradosp">
+            <a href="decimo.html"><p>GRADO DECIMO</p></a>
         </div>
-        <div class="grados">
-            <div class="gradosp">
-                <a href="noveno.html"><p>GRADO NOVENO</p></a>
-            </div>
+    </div>
+    <div class="grados">
+        <div class="gradosp">
+            <a href="once.html"><p>GRADO ONCE</p></a>
         </div>
-        <div class="grados">
-            <div class="gradosp">
-                <a href="decimo.html"><p>GRADO DECIMO</p></a>
-            </div>
-        </div>
-        <div class="grados">
-            <div class="gradosp">
-                <a href="once.html"><p>GRADO ONCE</p></a>
-            </div>
-        </div>
+    </div>
 
 
     </div>
@@ -210,10 +192,10 @@
         <a href="https://www.facebook.com"><img src="pictures/facebook.png" alt="" width="10%"></a>
         <a href="https://www.instagram.com"><img src="pictures/instagram.png" alt="" width="10%"></a>
         <a href="https://www.youtube.com"><img src="pictures/youtube.png" alt="" width="10%"></a>
-    
-       
+
+
     </div>
-    
+
 
 
 </body>

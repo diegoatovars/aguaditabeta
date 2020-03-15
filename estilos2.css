@@ -250,7 +250,7 @@
 /*----------------------------NOTICIAS*/
 
 .noticias{
-    margin: auto;
+    margin: auto auto 100px auto;
     width: 80%;
     height: auto;
     background-color: #d7fffd;

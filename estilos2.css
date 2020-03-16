@@ -252,11 +252,12 @@
 .noticias{
     margin: auto auto 100px auto;
     width: 80%;
-    height: 2000px;
+    height: auto;
     background-color: #d7fffd;
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: space-between;
 }
 
 .noticias img{
@@ -265,4 +266,18 @@
 
     border-style: inset;
     border-radius: 10px;
+}
+
+
+.noticiastxt{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.noticiastitle{
+    font-size: 6rem;
+}
+
+.noticastextos{
+    font-size: 1.5rem;
 }

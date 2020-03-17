@@ -284,14 +284,24 @@
 }
 
 @media all and (max-width:640px){
+
+    .cabe2 p{
+        font-family: 'Nunito', sans-serif;
+        position: absolute;
+        font-size: 1.5rem;
+        top: 40%;
+        right: 5%;
+        text-align: right;
+        background: #ffffff;
+    }
     .noticiastxt{
         font-size: 1.5rem;
         text-align: center;
         font-family: 'Nunito', sans-serif;
     }
-        .noticiastitle{
-            font-size: 6rem;
-            font-family: 'Nunito', sans-serif;
-        }
+    .noticiastitle{
+        font-size: 6rem;
+        font-family: 'Nunito', sans-serif;
+    }
 
 } 

@@ -317,6 +317,7 @@
         width: 90%;
         height: auto;
         margin: 0 auto 5rem auto;
+        background-color: darkred;
     }
     .grados{
         position: relative;
